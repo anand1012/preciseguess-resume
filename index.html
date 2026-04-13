@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anand Swaroop — Data Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <div class="avatar">AS</div>
+      <div class="header-text">
+        <h1>Anand Swaroop</h1>
+        <p class="title">Data Engineering · Distributed Systems & Real-Time Data Platforms</p>
+        <div class="contact-links">
+          <a href="mailto:anand1012@gmail.com">✉ anand1012@gmail.com</a>
+          <a href="tel:3028985696">📞 302-898-5696</a>
+          <a href="https://linkedin.com/in/anand1012" target="_blank">🔗 linkedin.com/in/anand1012</a>
+          <span>📍 Newark, DE</span>
+        </div>
+      </div>
+      <a href="Anand_Swaroop.pdf" class="btn-download" download>⬇ Download Resume</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- SKILLS -->
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="tags">
+            <span>Java</span><span>Scala</span><span>Python</span><span>SQL</span><span>Shell</span><span>PowerShell</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Big Data & Streaming</h4>
+          <div class="tags">
+            <span>Apache Spark</span><span>Kafka</span><span>Hadoop</span><span>Hive</span><span>Impala</span><span>HBase</span><span>Cassandra</span><span>Delta Lake</span><span>MapReduce</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud & Platforms</h4>
+          <div class="tags">
+            <span>AWS (S3, EC2, EMR)</span><span>Google Cloud</span><span>Azure</span><span>Databricks</span><span>Cloudera CDH</span><span>Hortonworks</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <div class="tags">
+            <span>Oracle</span><span>Teradata</span><span>SQL Server</span><span>Vertica</span><span>DB2</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>DevOps & Tooling</h4>
+          <div class="tags">
+            <span>Git</span><span>Jenkins</span><span>Ansible</span><span>Maven</span><span>Spring Boot</span><span>Autosys</span><span>Control-M</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Lead Developer</h3>
+            <p class="company">Transamerica · Newark, DE</p>
+            <p class="domain">Treasury & Risk Management — IBPS and FIS AvantGard platforms</p>
+          </div>
+          <span class="date">Sep 2024 — Present</span>
+        </div>
+        <ul>
+          <li>Led Azure cloud migration of the AvantGard treasury platform from on-prem private cloud, replacing legacy username/password auth with enterprise SSO across all integrated services.</li>
+          <li>Modernized SQL Server backend for the IBPS application through a major version upgrade, closing security findings and unblocking dependent compliance work.</li>
+          <li>Built workflow automation, stored procedures, and SQL scripts for bank wire payment processing, ensuring ISO compliant external file transfers across counterparty banks.</li>
+          <li>Re-engineered legacy scheduler jobs to current FIS ATS standards; earned FIS ATS (AvantGard) developer certification.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Senior Data Engineer</h3>
+            <p class="company">Citi · Newark, DE</p>
+            <p class="domain">FRTB-IMA — Fundamental Review of the Trading Book, Market Risk regulatory program</p>
+          </div>
+          <span class="date">Jun 2021 — Aug 2024</span>
+        </div>
+        <ul>
+          <li>Architected and built scalable Spark (Java) ingestion pipelines processing front-office trade book data for FRTB-IMA regulatory P&L vector calculations across global trading desks.</li>
+          <li>Designed and implemented hybrid Kafka streaming + batch processing framework, meeting strict regulatory SLAs for end-of-day risk submission.</li>
+          <li>Built data lake on AWS S3 with partitioning and storage layout optimized for both cost and downstream query performance.</li>
+          <li>Authored complex Spark UDFs in Java for risk aggregation and transformation logic used by multiple downstream risk and finance consumers.</li>
+          <li>Stood up CI/CD pipelines on Bitbucket with automated testing, cutting deployment lead time by ~40% and reducing rollback incidents.</li>
+          <li>Led migration of source-of-truth data from Oracle to Hadoop, coordinating across upstream trading, risk, and finance teams in multiple regions.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Tech Lead, Data Engineering</h3>
+            <p class="company">Bank of America · Newark, DE</p>
+            <p class="domain">Strategic Data Platform (1Hadoop) — enterprise analytics & modeling platform</p>
+          </div>
+          <span class="date">Nov 2019 — May 2021</span>
+        </div>
+        <ul>
+          <li>Led a team of 8 engineers building a consolidated analytics and modeling data platform serving enterprise-wide consumers.</li>
+          <li>Drove application onboarding to the Hadoop data lake, building reusable bulk-transfer utilities moving 2 TB+ daily from Teradata into HDFS.</li>
+          <li>Designed Spark and Hive-based data validation framework spanning Teradata, SQL Server, Oracle, and Vertica sources, eliminating a recurring class of reconciliation defects.</li>
+          <li>Drove team transition from Waterfall to Agile, lifting sprint throughput by ~30% within two quarters.</li>
+          <li>Delivered the data integration backbone for the CARES Act small-business loan response under a multi-week timeline.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Tech Lead, Data Engineering</h3>
+            <p class="company">JPMorgan Chase · Newark, DE</p>
+            <p class="domain">RFIS (Risk Finance Integration Services) / Chase 360 — credit cards risk & finance</p>
+          </div>
+          <span class="date">Jul 2018 — Nov 2019</span>
+        </div>
+        <ul>
+          <li>Built the common data integration platform for cards business risk and finance, ingesting from Teradata, Oracle, and file feeds into a unified HDFS staging layer.</li>
+          <li>Developed Spark (Scala) ingestion pipelines processing 1 TB+ per run for downstream test environments.</li>
+          <li>Created a parameterized Java framework wrapping Spark-Scala jobs, turning bespoke ingestion code into a reusable template adopted across the team.</li>
+          <li>Implemented column-level data quality checks at ingestion, cutting downstream data defects by ~35%.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Senior Engineer, OneHadoop Data Lake</h3>
+            <p class="company">Bank of America · Newark, DE</p>
+            <p class="domain">Erica AI Platform · Enterprise Cluster Migration · Cassandra-HDFS Ingestion</p>
+          </div>
+          <span class="date">Dec 2014 — Jun 2018</span>
+        </div>
+        <ul>
+          <li>Erica AI: Delivered the data platform powering Bank of America's AI-driven virtual financial assistant, aggregating customer data across multiple source systems.</li>
+          <li>HAAS Migration: Led migration of 30+ applications and ~2 PB of HDFS data from independent clusters to the firm's Hadoop-as-a-Service platform, moving 3,000+ tables with zero data loss.</li>
+          <li>Cassandra Ingestion: Built a reusable framework ingesting 100M+ records/day from the Cassandra customer event hub into HDFS, with Parquet conversion, dynamic schema evolution, and automatic retry.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="company">Bank of America Merrill Lynch · American Express · Nokia Siemens Networks</p>
+            <p class="domain">Hyderabad, India</p>
+          </div>
+          <span class="date">Dec 2010 — May 2015</span>
+        </div>
+        <ul>
+          <li>BAML: Built an HBase-backed customer relationship system using the Java API and Thrift, with a JavaScript visualization UI.</li>
+          <li>American Express: Led mainframe-to-Hadoop migration, converting EBCDIC to ASCII and building MapReduce reporting pipelines.</li>
+          <li>Nokia Siemens Networks: Designed and built a Java/JSP/Servlets web application for telecom network infrastructure management.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION & CERTS -->
+    <section>
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Bachelor of Technology, Computer Science & Engineering</h3>
+          </div>
+        </div>
+        <div class="certs-grid">
+          <div class="cert-badge">
+            <span class="cert-icon">☁️</span>
+            <span>Google Cloud Certified<br/><strong>Professional Data Engineer</strong></span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-icon">☁️</span>
+            <span>Google Cloud Certified<br/><strong>Associate Cloud Engineer</strong></span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-icon">🐘</span>
+            <span>MapR Certified<br/><strong>Hadoop Developer</strong></span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-icon">🏦</span>
+            <span>FIS Certified<br/><strong>ATS Developer (AvantGard)</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Anand Swaroop · Data Engineer · <a href="mailto:anand1012@gmail.com">anand1012@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

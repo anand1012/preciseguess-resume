@@ -1,0 +1,12 @@
+allContacts:
+  email: 'anand.swaroop.gcp@gmail.com'
+  phoneNumber: '+1.3028985696'
+  postalAddress:
+    regionCode: 'US'
+    postalCode: '19702'
+    administrativeArea: 'DE'
+    locality: 'Newark'
+    addressLines:
+      - 'Newark'
+    recipients:
+      - 'Anand Swaroop'
