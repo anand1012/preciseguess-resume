@@ -132,11 +132,16 @@ main {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 2px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
 }
 
 .job-date {
   font-weight: 400;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .job-domain {
@@ -144,6 +149,14 @@ main {
   color: var(--light);
   margin-bottom: 8px !important;
   font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.job-location {
+  white-space: nowrap;
 }
 
 .job ul {
@@ -157,6 +170,73 @@ main {
 .job ul li {
   font-size: 13.5px;
   line-height: 1.6;
+}
+
+/* ── Project button ── */
+.project-actions {
+  margin-top: 14px !important;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #111 !important;
+  background: linear-gradient(135deg, #FFD6A5 0%, #CAFFBF 50%, #9BF6FF 100%);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 999px;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  filter: saturate(1.1);
+}
+
+.btn-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3ccf6a;
+  box-shadow: 0 0 0 3px rgba(60, 207, 106, 0.18);
+  flex-shrink: 0;
+}
+
+.btn-arrow {
+  font-size: 14px;
+  transition: transform 0.15s ease;
+}
+
+.btn:hover .btn-arrow { transform: translateX(2px); }
+
+.btn.is-offline {
+  background: #f3f3f3;
+  color: var(--muted) !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: none;
+}
+
+.btn.is-offline .btn-dot {
+  background: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+.btn.is-checking .btn-dot {
+  background: #d4a017;
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.18);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
 }
 
 /* ── Footer ── */

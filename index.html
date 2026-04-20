@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anand Swaroop — Data Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=5" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -14,12 +14,12 @@
     <div class="header-inner">
       <div class="header-left">
         <h1>Anand Swaroop</h1>
-        <p class="subtitle">Data Engineering · Distributed Systems & Real-Time Data Platforms</p>
       </div>
       <div class="header-right">
         <p>Mobile: 302-898-5696</p>
-        <p>Email: anand1012@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/anand1012</p>
+        <p>Email: <a href="mailto:anand1012@gmail.com">anand1012@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/anand1012" target="_blank" rel="noopener">linkedin.com/in/anand1012</a></p>
+        <p>GitHub: <a href="https://github.com/anand1012" target="_blank" rel="noopener">github.com/anand1012</a></p>
       </div>
     </div>
   </header>
@@ -27,11 +27,67 @@
   <!-- MAIN -->
   <main>
 
-    <!-- BIO -->
+    <!-- EXPERIENCE -->
     <div class="row">
-      <div class="label">Bio</div>
+      <div class="label">Experience</div>
       <div class="content">
-        <p>Senior Data Engineering leader with 13+ years building large-scale data platforms across top-tier financial institutions including Citi, JPMorgan Chase, and Bank of America. Specializes in real-time streaming architectures, distributed data lakes, and regulatory data pipelines processing petabytes at scale. Holds dual Google Cloud certifications and has led teams of up to 8 engineers. Proven track record of delivering high-impact platforms — from powering Bank of America's Erica AI assistant to architecting FRTB-IMA regulatory systems at Citi that meet the most stringent global risk SLAs.</p>
+
+        <div class="job">
+          <p class="job-title">Senior Data Engineer, Transamerica (Synechron) <span class="job-date">(Aug 2025 – Present)</span></p>
+          <p class="job-domain"><span>Treasury | FIS AvantGard, SQL Server, Azure, LangChain, LangGraph, Amazon Q</span><span class="job-location">Newark, DE (remote)</span></p>
+          <ul>
+            <li>Migrated 300+ treasury workflows processing $1B+ in daily wire transfers to Azure with zero incidents — job-by-job validation and parallel run compressed a 6-month migration risk window to 15 days. Certified AvantGard Developer.</li>
+            <li>Automated end-to-end compliance validation for marketing offers using a RAG pipeline grounded in legal documents and historical offers; human-in-the-loop design ensured zero offers bypassed review.</li>
+            <li>Cut legacy Java upgrade cycle 62% by pitching an Amazon Q POC to Executive Leadership replacing 12-month legacy roadmap.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <p class="job-title">Senior Data Engineer, Citi (Synechron) <span class="job-date">(Jun 2024 – Jul 2025)</span></p>
+          <p class="job-domain"><span>Market Risk | Spark, Kafka, AWS, Java, Spring Boot</span><span class="job-location">Newark, DE (remote)</span></p>
+          <ul>
+            <li>Architected ingestion pipelines processing 10M+ daily trades across 20 global desks for FRTB-IMA regulatory P&amp;L calculations — enabling Citi to hold 44% lower capital reserves under Basel III's Internal Model Approach.</li>
+            <li>Reduced Spark pipeline runtime by 58% through systematic performance tuning across all pipeline modules; enabling reliable end-of-day risk submission within regulatory SLA windows.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <p class="job-title">Lead Data Engineer, Bank of America (Synechron) <span class="job-date">(Nov 2019 – May 2024)</span></p>
+          <p class="job-domain"><span>Strategic Data Platform • CARES Act • Erica AI Platform | Spark, Hadoop, Java, Python</span><span class="job-location">Newark, DE</span></p>
+          <ul>
+            <li>Migrated 30+ applications, ~2 PB, and 3,000+ tables to Hadoop-as-a-Service in 4 months with zero downtime, coordinating rollback strategies across 10+ upstream and downstream teams.</li>
+            <li>Saved $2M+ in engineering resources by designing a self-service pipeline framework adopted by 20+ enterprise teams, eliminating the need for a dedicated data engineer per team.</li>
+            <li>Accelerated CARES Act relief pipeline delivery by 72% mocking upstream data to eliminate source team dependency.</li>
+            <li>Delivered data platform for BofA's Erica AI assistant (50M+ users), processing 500+ GB/day from 15 source systems using custom UDFs serving as a unified source for all Erica analytics.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <p class="job-title">Data Engineer, JPMorgan Chase (TCS) <span class="job-date">(Jul 2018 – Nov 2019)</span></p>
+          <p class="job-domain"><span>Risk Financing — Credit Cards Risk &amp; Finance | Spark (Scala), Java, Spring Boot, Cloudera</span><span class="job-location">Newark, DE</span></p>
+          <ul>
+            <li>Built common data integration platform ingesting from 10+ sources and hundreds of tables into HDFS with data quality check layer, processing 1 TB per day, reducing new source onboarding from weeks to days.</li>
+            <li>Reduced in-house scheduler deployment downtime from 3 hours to zero by implementing blue-green deployments via Docker and Kubernetes — eliminating manual pipeline catch-up runs and enabling zero-downtime releases.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <p class="job-title">Data Engineer, Bank of America (TCS) <span class="job-date">(Oct 2015 – Jun 2018)</span></p>
+          <p class="job-domain"><span>OneHadoop Cards Platform | Cassandra, Oracle, Hadoop, Cloudera</span><span class="job-location">Newark, DE</span></p>
+          <ul>
+            <li>Architected and developed fault-tolerant ingestion pipeline processing 100M+ records/day from BofA's central events hub into HDFS, becoming the primary data backbone powering all near-real-time analytics across the organization.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <p class="job-title">Software Engineer, TCS India <span class="job-date">(Dec 2010 – Sept 2015)</span></p>
+          <p class="job-domain">American Express · Nokia Siemens</p>
+          <ul>
+            <li>American Express: Built mainframe EBCDIC-to-ASCII format conversion at scale using MapReduce.</li>
+            <li>Nokia Siemens: Designed Java/JSP/Servlets web app for telecom infrastructure management; led client technical discussions.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
@@ -41,85 +97,26 @@
     <div class="row">
       <div class="label">Skills</div>
       <div class="content">
-        <p><strong>Languages:</strong> Java, Scala, Python, SQL, Shell, PowerShell</p>
-        <p><strong>Big Data & Streaming:</strong> Apache Spark (Structured Streaming, Spark SQL), Kafka, Hadoop, Hive, Impala, HBase, Cassandra, Delta Lake, Sqoop, Oozie, MapReduce</p>
-        <p><strong>Cloud & Platforms:</strong> AWS (S3, EC2, EMR), Google Cloud, Azure, Databricks, Cloudera CDH, Hortonworks, MapR</p>
-        <p><strong>Databases:</strong> Oracle, Teradata, SQL Server, Vertica, DB2</p>
-        <p><strong>DevOps & Tooling:</strong> Bitbucket, Git, Jenkins, Ansible, Maven, SBT, Spring Boot, JUnit, Mockito, Autosys, Control-M</p>
+        <p>Java | Scala | Python | Spark | Databricks | SQL | Kafka | GCP | AWS | Airflow | Medallion | Maven | Docker | Kubernetes</p>
+        <p>BigQuery | Vertex AI | DBT | Delta Lake | Langsmith | Langchain | AI RAG | Chroma DB | Claude | OpenAI API | Git</p>
       </div>
     </div>
 
     <div class="divider"></div>
 
-    <!-- EXPERIENCE -->
+    <!-- PROJECTS -->
     <div class="row">
-      <div class="label">Experience</div>
+      <div class="label">Projects</div>
       <div class="content">
-
-        <div class="job">
-          <p class="job-title">Lead Developer, Transamerica <span class="job-date">(Sep 2024 – Present)</span></p>
-          <p class="job-domain">Treasury & Risk Management — IBPS and FIS AvantGard platforms · Newark, DE</p>
-          <ul>
-            <li>Led Azure cloud migration of the AvantGard treasury platform from on-prem private cloud, replacing legacy username/password auth with enterprise SSO across all integrated services.</li>
-            <li>Modernized SQL Server backend for the IBPS application through a major version upgrade, closing security findings and unblocking dependent compliance work.</li>
-            <li>Built workflow automation, stored procedures, and SQL scripts for bank wire payment processing, ensuring ISO compliant external file transfers across counterparty banks.</li>
-            <li>Re-engineered legacy scheduler jobs to current FIS ATS standards; earned FIS ATS (AvantGard) developer certification.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <p class="job-title">Senior Data Engineer, Citi <span class="job-date">(Jun 2021 – Aug 2024)</span></p>
-          <p class="job-domain">FRTB-IMA — Fundamental Review of the Trading Book, Market Risk · Newark, DE</p>
-          <ul>
-            <li>Architected and built scalable Spark (Java) ingestion pipelines processing front-office trade book data for FRTB-IMA regulatory P&L vector calculations across global trading desks.</li>
-            <li>Designed and implemented hybrid Kafka streaming + batch processing framework, meeting strict regulatory SLAs for end-of-day risk submission.</li>
-            <li>Built data lake on AWS S3 with partitioning and storage layout optimized for both cost and downstream query performance.</li>
-            <li>Stood up CI/CD pipelines on Bitbucket with automated testing, cutting deployment lead time by ~40%.</li>
-            <li>Led migration of source-of-truth data from Oracle to Hadoop across global trading, risk, and finance teams.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <p class="job-title">Tech Lead, Data Engineering, Bank of America <span class="job-date">(Nov 2019 – May 2021)</span></p>
-          <p class="job-domain">Strategic Data Platform (1Hadoop) — enterprise analytics & modeling · Newark, DE</p>
-          <ul>
-            <li>Led a team of 8 engineers building a consolidated analytics and modeling data platform serving enterprise-wide consumers.</li>
-            <li>Built reusable bulk-transfer utilities moving 2 TB+ daily from Teradata into HDFS.</li>
-            <li>Designed Spark and Hive-based data validation framework spanning Teradata, SQL Server, Oracle, and Vertica sources.</li>
-            <li>Delivered the data integration backbone for the CARES Act small-business loan response.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <p class="job-title">Tech Lead, Data Engineering, JPMorgan Chase <span class="job-date">(Jul 2018 – Nov 2019)</span></p>
-          <p class="job-domain">RFIS / Chase 360 — credit cards risk & finance · Newark, DE</p>
-          <ul>
-            <li>Built the common data integration platform for cards business risk and finance from Teradata, Oracle, and file feeds into HDFS.</li>
-            <li>Developed Spark (Scala) ingestion pipelines processing 1 TB+ per run for downstream test environments.</li>
-            <li>Implemented column-level data quality checks at ingestion, cutting downstream data defects by ~35%.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <p class="job-title">Senior Engineer, OneHadoop Data Lake, Bank of America <span class="job-date">(Dec 2014 – Jun 2018)</span></p>
-          <p class="job-domain">Erica AI Platform · Enterprise Cluster Migration · Cassandra-HDFS Ingestion · Newark, DE</p>
-          <ul>
-            <li>Delivered the data platform powering Bank of America's Erica AI virtual financial assistant.</li>
-            <li>Led migration of 30+ applications and ~2 PB of HDFS data to the firm's Hadoop-as-a-Service platform — 3,000+ tables with zero data loss.</li>
-            <li>Built a reusable framework ingesting 100M+ records/day from Cassandra into HDFS with Parquet conversion and dynamic schema evolution.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <p class="job-title">Software Engineer — BAML · American Express · Nokia Siemens <span class="job-date">(Dec 2010 – May 2015)</span></p>
-          <p class="job-domain">Hyderabad, India</p>
-          <ul>
-            <li>BAML: Built an HBase-backed customer relationship system using Java API and Thrift with a JavaScript visualization UI.</li>
-            <li>American Express: Led mainframe-to-Hadoop migration, converting EBCDIC to ASCII and building MapReduce reporting pipelines.</li>
-            <li>Nokia Siemens: Designed and built a Java/JSP/Servlets web application for telecom network infrastructure management.</li>
-          </ul>
-        </div>
-
+        <p><strong>RiskLens</strong> — AI-powered data catalog for FRTB-IMA market risk regulatory compliance on GCP, using hybrid RAG search (BM25 + vector) with Claude Sonnet for lineage queries and Haiku for query filtering.</p>
+        <p>Data used: FRED, Yahoo Finance, Synthetic · <a href="https://github.com/anand1012/risklens" target="_blank" rel="noopener">github.com/anand1012/risklens</a></p>
+        <p class="project-actions">
+          <a id="risklens-btn" class="btn" href="https://risklens.preciseguess.com" target="_blank" rel="noopener">
+            <span class="btn-dot" aria-hidden="true"></span>
+            <span class="btn-label">View RiskLens Live</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
       </div>
     </div>
 
@@ -127,13 +124,10 @@
 
     <!-- EDUCATION & CERTS -->
     <div class="row">
-      <div class="label">Education &amp; Certifications</div>
+      <div class="label">Education / Certifications</div>
       <div class="content">
-        <p><strong>Bachelor of Technology, Computer Science & Engineering</strong></p>
-        <br/>
-        <p>Google Cloud Certified — Professional Data Engineer</p>
-        <p>Google Cloud Certified — Associate Cloud Engineer</p>
-        <p>MapR Certified Hadoop Developer</p>
+        <p>Bachelor of Technology, Computer Science</p>
+        <p>Google Cloud Platform — Associate Cloud Engineer, Professional Data Engineer</p>
         <p>FIS Certified ATS Developer (AvantGard)</p>
       </div>
     </div>
@@ -156,6 +150,48 @@
     header.addEventListener('mouseleave', () => {
       header.style.background = 'linear-gradient(135deg, #FFD6A5 0%, #CAFFBF 50%, #9BF6FF 100%)';
     });
+
+    // Button gradient follows cursor (same feel as header)
+    document.querySelectorAll('.btn').forEach((btn) => {
+      btn.addEventListener('mousemove', (e) => {
+        if (btn.classList.contains('is-offline')) return;
+        const rect = btn.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        btn.style.background = `radial-gradient(circle at ${x}% ${y}%, #FFD6A5, #CAFFBF, #9BF6FF)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        if (btn.classList.contains('is-offline')) return;
+        btn.style.background = 'linear-gradient(135deg, #FFD6A5 0%, #CAFFBF 50%, #9BF6FF 100%)';
+      });
+    });
+
+    // RiskLens liveness probe
+    (async () => {
+      const btn = document.getElementById('risklens-btn');
+      if (!btn) return;
+      const label = btn.querySelector('.btn-label');
+      btn.classList.add('is-checking');
+      label.textContent = 'Checking RiskLens…';
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 4000);
+        await fetch('https://risklens.preciseguess.com', {
+          method: 'HEAD',
+          mode: 'no-cors',
+          cache: 'no-store',
+          signal: controller.signal,
+        });
+        clearTimeout(timeout);
+        btn.classList.remove('is-checking');
+        label.textContent = 'View RiskLens Live';
+      } catch (err) {
+        btn.classList.remove('is-checking');
+        btn.classList.add('is-offline');
+        btn.removeAttribute('href');
+        label.textContent = 'RiskLens currently offline';
+      }
+    })();
   </script>
 </body>
 </html>
